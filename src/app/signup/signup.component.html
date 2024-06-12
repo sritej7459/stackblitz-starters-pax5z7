@@ -1,0 +1,63 @@
+<form (ngSubmit)="signup()" #signupForm="ngForm">
+  <div>
+    <label for="name">Name:</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      [(ngModel)]="signupFormModel.name"
+      required
+    />
+  </div>
+  <div>
+    <label for="age">Age:</label>
+    <input
+      type="number"
+      id="age"
+      name="age"
+      [(ngModel)]="signupFormModel.age"
+      required
+    />
+  </div>
+  <div>
+    <label for="address">Address:</label>
+    <input
+      type="text"
+      id="address"
+      name="address"
+      [(ngModel)]="signupFormModel.address"
+      required
+    />
+  </div>
+  <div>
+    <label for="phone">Phone Number:</label>
+    <input
+      type="text"
+      id="phone"
+      name="phone"
+      [(ngModel)]="signupFormModel.phone"
+      required
+    />
+  </div>
+  <div>
+    <label for="newUsername">Username/Email:</label>
+    <input
+      type="text"
+      id="newUsername"
+      name="newUsername"
+      [(ngModel)]="signupFormModel.username"
+      required
+    />
+  </div>
+  <div>
+    <label for="newPassword">Password:</label>
+    <input
+      type="password"
+      id="newPassword"
+      name="newPassword"
+      [(ngModel)]="signupFormModel.password"
+      required
+    />
+  </div>
+  <button type="submit">Signup</button>
+</form>
